@@ -25,7 +25,7 @@ btn1.addEventListener("click", () => {
     newRowCell0.textContent = `Row ${tableLength + 1} Col 1`;
     newRowCell0.style.backgroundColor = "yellow";
     newRowCell1.textContent = `Row ${tableLength + 1} Col 2`;;
-    newRowCell1.style.backgroundColor = "yellow";
+    newRowCell1.style.backgroundColor = "yellow";    
 })
 
 // How can we add a cell to the end of a row?
@@ -41,4 +41,15 @@ btn2.addEventListener("click", () => {
     let newCell = row2.insertCell(1);
     newCell.textContent = "Middle of row 2";
     newCell.style.backgroundColor = "yellow";
+})
+
+btn3.addEventListener("click", () => {
+    // Find the second row in the table using the "rows" property
+    const row2 = table.rows[1];
+    // Find the first cell in the row using the "cells" property
+    const row2cell1 = row2.cells[0];
+
+    console.log("Length of row 2", row2.cells.length);
+
+    row2cell1.style.backgroundColor = "yellow";
 })
