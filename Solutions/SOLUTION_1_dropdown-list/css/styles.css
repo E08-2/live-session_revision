@@ -1,0 +1,11 @@
+label, select {
+    display: block;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+div {
+    background-color: yellow;
+}
